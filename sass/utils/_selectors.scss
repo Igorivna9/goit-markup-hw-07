@@ -1,0 +1,31 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    color: $primary-text-color;
+    background-color: $primary-white-color;
+    font-family: $primary-font;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+}
+
+h1, 
+h2, 
+h3, 
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,33 @@
+.feature {
+    @extend %list;
+    @include wrapedFlex;
+}
+.feature__item {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-right: 30px;
+    
+    &:nth-child(4n) {
+        margin-right: 0;
+    }
+}
+.feature__icon {
+    @include centeredFlex;
+    
+    height: 120px;
+    width: 270px;
+    margin-bottom: 30px;
+    background-color: $background-section-color;
+    border-radius: 4px;   
+}
+.feature__title {
+    margin-bottom: 10px;
+    
+    color: $title-text-color;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    font-size: 14px;
+} 
+.feature__text {
+    line-height: 1.71;
+}

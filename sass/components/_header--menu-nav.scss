@@ -1,0 +1,44 @@
+.menu-nav {
+    @extend %list;
+    @include centeredFlex ($justify: none);
+
+    &--color {
+        color: $title-text-color;
+
+        &.current {
+            color: $accent-color;
+        }
+    }
+}
+.menu-nav__item {
+    &::after {
+        content: "";
+        display: block;
+        height: 4px;
+        border-radius: 2px;
+        background-color: transparent;
+        transform: translate(0, 1px);
+        @include transition(background-color);
+    }
+}
+.menu-nav__item {
+    &.current {
+        &::after {
+            content: "";
+            display: block;
+            background-color: $accent-color;
+        }
+    }
+}
+.menu-nav__item {
+    &:hover::after,
+    &:focus::after {
+        content: "";
+        background-color: $accent-color;
+    }
+}
+.menu-nav__item {
+    &:not(:last-child) {
+        margin-right: 50px;
+    }
+}

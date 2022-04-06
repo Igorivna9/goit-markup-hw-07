@@ -1,0 +1,6 @@
+.header {
+    border-bottom: 1px solid $primary-border-color;
+}
+.header__container {
+    @include centeredFlex ($justify: none);
+}

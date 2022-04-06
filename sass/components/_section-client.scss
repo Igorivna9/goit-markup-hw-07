@@ -1,0 +1,29 @@
+.client {
+    @extend %list;
+    @include space-betweenedFlex;
+}
+.client__link {
+    @include centeredFlex;
+    @include transition(border-color);
+    @include transition(fill);
+    
+    width: 170px;
+    height: 92px;
+    border: 1px solid $secondary-list-color;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    &:hover,
+    &:focus {
+        border-color: $accent-color;
+
+        .client__icon {
+            fill: $accent-color;
+        }
+    }
+}
+.client__icon {
+    fill: $secondary-list-color;
+    @include transition(border-color);
+    @include transition(fill);
+}

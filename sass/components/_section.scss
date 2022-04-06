@@ -1,0 +1,28 @@
+.section {
+    padding: 94px 0 94px 0;
+
+    &--nopadding {
+        padding-top: 0;
+    }
+    &--bg {
+        @extend %centered;
+        background-color: $background-section-color;
+    }
+}
+.section__title {
+    @extend %centered;
+    @extend %visually-hidden;
+
+    margin-bottom: 50px;
+    
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+}
+.container {
+    width: 1200px;
+    padding: 0 15px 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}

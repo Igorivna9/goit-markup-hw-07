@@ -1,0 +1,33 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $background-bg-color;
+}
+.footer__container {
+    @include baselinedFlex;
+}
+.address {
+    @extend %list;
+    width: 231px;
+}
+.address__item {
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}
+.address__link-address {
+    @extend %link;
+    color: $primary-white-color;
+}
+.address__link-contact {
+    @extend %link;
+    @include transition(color);
+
+    color: $secondary-contact-color;   
+    line-height: 1.71;
+
+    &:hover, 
+    &:focus {
+        color: $accent-color;
+    }
+}

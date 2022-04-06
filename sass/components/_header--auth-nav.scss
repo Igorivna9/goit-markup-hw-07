@@ -1,0 +1,21 @@
+.auth-nav {
+    @extend %list;
+    @include centeredFlex ($justify: end);
+    
+    &--color {
+        color: $primary-text-color;
+    }
+}
+.auth-nav__item {
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+.auth-nav__icon {
+    margin-right: 10px;
+    fill: currentColor;
+
+    &:focus {
+        color: $accent-color;
+    }
+}
